@@ -1,4 +1,4 @@
-# 52 card pickup
+e# 52 card pickup
 
 ## Avtor
 * Peter Mandelj Mejač
@@ -11,4 +11,4 @@ Karte, ki so obrnjene navzgor odvržem in nadaljujem z ostalimi, ki so obrnjene 
 
 Kolikokrat bom moral met ponoviti (v povprečju), da se znebim vseh kart? Oziroma matematično, koliko je pričakovana vrednost števila metov?
 
-[Spletna stran](https://jagrdemo.github.io/remark)
+[Spletna stran](https://petermmejac.github.io/predstavitev)
