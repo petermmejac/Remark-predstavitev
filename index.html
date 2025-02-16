@@ -66,23 +66,35 @@ name: analiza-problema
 
 template: analiza-problema
 
-S pomočjo možnosti `template` lahko pripravimo osnutek strani, ki ga večkrat uporabimo.
+Zanima nas <i>pričakovana vrednost</i> števila metov.
 
+count:false
 ---
 
 template: analiza-problema
 
+Za lažjo predstavo, začnimo z eno karto oziroma v trenutku, ko jih 51 že navzgor obrnjenih leži na tleh.
+      
 name: ime
 S pomočjo možnosti `name` lahko označimo slide tako, da povezavo nanj podamo znotraj predstavitve ali skočimo nanj, če URL naslovu dodamo [`#ime`](#ime).
 
 ---
 
-template: nadaljnje-moznosti
+template: analiza-problema
 
-Z vključitvijo knjižnice MathJax lahko vnašamo $\LaTeX$ formule:
 $$
-e^{i \pi} + 1 = 0.
+E(1) = \frac{1}{2}*1 + \frac{1}{2}*(1 - E(1))
 $$
+
+Lahko si predstavljamo, kot da imamo $\frac{1}{2}$ možnosti, da se karta obrne navzgor in $\frac{1}{2}$, da karta pade obrnjena navzdol in je treba poskus ponoviti.
+Zato dodamo v oklepaj še en E(1).
+
+Ko to poračunamo, dobimo:
+$$
+E(1) = 2
+$$
+
+To pomeni, da je pričakovano število metov z eno karto v roki enako 2.
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
