@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spletna predstavitev z orodjem Remark</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+layout: true
+background-image: url(background.jpg)
+
+---
+
+class: center, middle
+<!-- nastavitev poravnave za trenutni slide -->
+
+# Spletna predstavitev z orodjem Remark
+
+???
+Dodamo lahko oporne točke.
+
+<!-- nov slide -->
+---
+
+# Remark
+
+Remark je orodje za pripravo spletne predstavitve.
+
+Omogoča na primer hitro organizacijo zapiskov, pripravljenih v jeziku markdown, v obliko, primerno za predstavitev občinstvu.
+
+<!-- nov slide z obstoječo vsebino -->
+--
+
+count:false
+<!-- prepreči, da bi se nadaljevanje štelo kot nov slide -->
+
+Več o možnostih, ki jih orodje ponuja, lahko preberemo
+- v [modelni predstavitvi](https://remarkjs.com/),
+- na [projektni strani](https://github.com/gnab/remark) in
+- v [natančnejši dokumentaciji](https://github.com/gnab/remark/wiki).
+
+<!-- besedilo ali elemente lahko poravnamo z .left[...], .center[...] ali .right[...] -->
+.right[<img src="bulb.webp" height="200">]
+
+---
+
+layout: false
+name: nadaljnje-moznosti
+
+.right[<img src="bulb.webp" height="100">]
+# Nadaljnje možnosti
+
+---
+
+template: nadaljnje-moznosti
+
+S pomočjo možnosti `template` lahko pripravimo osnutek strani, ki ga večkrat uporabimo.
+
+---
+
+template: nadaljnje-moznosti
+
+name: ime
+S pomočjo možnosti `name` lahko označimo slide tako, da povezavo nanj podamo znotraj predstavitve ali skočimo nanj, če URL naslovu dodamo [`#ime`](#ime).
+
+---
+
+template: nadaljnje-moznosti
+
+Z vključitvijo knjižnice MathJax lahko vnašamo $\LaTeX$ formule:
+$$
+e^{i \pi} + 1 = 0.
+$$
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+  </body>
+</html>
