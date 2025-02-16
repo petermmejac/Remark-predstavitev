@@ -11,4 +11,4 @@ Karte, ki so obrnjene navzgor odvržem in nadaljujem z ostalimi, ki so obrnjene 
 
 Kolikokrat bom moral met ponoviti (v povprečju), da se znebim vseh kart? Oziroma matematično, koliko je pričakovana vrednost števila metov?
 
-[Spletna stran](https://petermmejac.github.io/Remark-predstavitev)
+[Spletna stran](https://petermmejac.github.io/remark_cards/)
