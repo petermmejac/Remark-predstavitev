@@ -75,7 +75,7 @@ Za lažjo predstavo, začnimo z eno karto oziroma v trenutku, ko jih 51 že navz
 template: analiza-problema
 
 $$
-E(1) = \frac{1}{2}1 + \frac{1}{2}(1 - E(1))
+E(1) = \frac{1}{2}1 + \frac{1}{2}(1 + E(1))
 $$
 
 Lahko si predstavljamo, kot da imamo $\frac{1}{2}$ možnosti, da se karta obrne navzgor in $\frac{1}{2}$, da karta pade obrnjena navzdol in je treba poskus ponoviti.
@@ -87,6 +87,30 @@ E(1) = 2
 $$
 
 To pomeni, da je pričakovano število metov z eno karto v roki enako 2.
+
+---
+
+template: analiza-problema
+
+Sedaj si predstavljajmo, da imamo 2 karti. Zgodi se lahk ena od treh stvari:
+<ul>
+  <li>Če obe karti pristaneta obrnjeni navzgor ($\frac{1}{2}\cdot\frac{1}{2} = \frac{1}{4}$) naredimo le en met ter zaključimo.</li>
+  <li>Če obe karti pristaneta obrnjeni navzdol ($\frac{1}{2}\cdot\frac{1}{2} = \frac{1}{4}$) naredimo en met in ponovimo met.</li>
+  <li>Če ena karta pristane obrnjena navzgor, ena obrnjena navzdol ($2\cdot(\frac{1}{2}\cdot\frac{1}{2}) = \frac{1}{4}$) naredimo en met in nam ostane ena karta, kar pomeni, da smo spet v E(1).</li>
+</ul>
+      
+---
+
+template: analiza-problema
+## Formula za 2
+$$
+E(2) = \frac{1}{4}1 + \frac{1}{2}(1 + E(1)) + \frac{1}{4}(1 + E(2))
+$$
+Spet poračunamo s tem, da vstavimo E(1) od prej in izrazimo E(2).
+Dobimo:
+$$
+E(2) = \frac{8}{3}
+$$
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
