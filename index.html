@@ -129,11 +129,19 @@ E(3) = \frac{1}{8}1 + \frac{3}{8}(1 + E(1)) + \frac{3}{8}(1 + E(2)) + \frac{1}{8
 $$
       
 $$
-E(4) = \frac{1}{16}1 + \frac{4}{16}(1 + E(1)) + \frac{6}{16}(1 + E(2)) + \frac{4}{16}(1 + E(3)) + \frac{1}{16}(1 + E(4))
+E(4) = \frac{1}{16}1 + \frac{4}{16}(1 + E(1)) + \frac{6}{16}(1 + E(2)) 
+$$
+
+$$
++ \frac{4}{16}(1 + E(3)) + \frac{1}{16}(1 + E(4))
 $$
       
 $$
-E(5) = \frac{1}{32}1 + \frac{5}{32}(1 + E(1)) + \frac{10}{32}(1 + E(2)) + \frac{10}{32}(1 + E(3)) + \frac{5}{32}(1 + E(4)) + \frac{1}{32}(1 + E(5))
+E(5) = \frac{1}{32}1 + \frac{5}{32}(1 + E(1)) + \frac{10}{32}(1 + E(2)) 
+$$
+
+$$
++ \frac{10}{32}(1 + E(3)) + \frac{5}{32}(1 + E(4)) + \frac{1}{32}(1 + E(5))
 $$
 ---
 
@@ -156,8 +164,9 @@ background-size: cover
     Formula
 </h1>
       
+E_{n} = \frac{1}{2^n} \left( \binom{n}{0}1 + \binom{n}{1}(1 + E_{1}) + \binom{n}{2}(1 + E_{2}) + \ldots + \binom{n}{n-1}(1 + E_{n-1}) + \binom{n}{n}(1 + E_{n}) \right)  
 $$
-E_{n} = \frac{1}{2^n} \left( \binom{n}{0}1 + \binom{n}{1}(1 + E_{1}) + \binom{n}{2}(1 + E_{2}) + \ldots + \binom{n}{n-1}(1 + E_{n-1}) + \binom{n}{n}(1 + E_{n}) \right)
+E(3) = \frac{1}{8}1 + \frac{3}{8}(1 + E(1)) + \frac{3}{8}(1 + E(2)) + \frac{1}{8}(1 + E(3))
 $$
 
     </textarea>
