@@ -92,11 +92,11 @@ To pomeni, da je pričakovano število metov z eno karto v roki enako 2.
 
 template: analiza-problema
 
-Sedaj si predstavljajmo, da imamo 2 karti. Zgodi se lahk ena od treh stvari:
+Sedaj si predstavljajmo, da imamo 2 karti. Zgodi se lahko ena od treh stvari:
 <ul>
   <li>Če obe karti pristaneta obrnjeni navzgor ($\frac{1}{2}\cdot\frac{1}{2} = \frac{1}{4}$) naredimo le en met ter zaključimo.</li>
   <li>Če obe karti pristaneta obrnjeni navzdol ($\frac{1}{2}\cdot\frac{1}{2} = \frac{1}{4}$) naredimo en met in ponovimo met.</li>
-  <li>Če ena karta pristane obrnjena navzgor, ena obrnjena navzdol ($2\cdot(\frac{1}{2}\cdot\frac{1}{2}) = \frac{1}{4}$) naredimo en met in nam ostane ena karta, kar pomeni, da smo spet v E(1).</li>
+  <li>Če ena karta pristane obrnjena navzgor, ena obrnjena navzdol $(2\cdot(\frac{1}{2}\cdot\frac{1}{2}) = \frac{1}{4})$ naredimo en met in nam ostane ena karta, kar pomeni, da smo spet v E(1).</li>
 </ul>
       
 ---
@@ -112,6 +112,8 @@ $$
 E(2) = \frac{8}{3}
 $$
 
+---
+layout: false
 name: ideja
 
 .right[<img src="bulb.webp" height="70">]
@@ -122,6 +124,7 @@ name: ideja
 template: ideja
       
 Mogoče bo pomagalo če si napišemo po istem postopku naslednje $E(3), E(4), E(5)$...
+
 $$E(3) = \frac{1}{8}1 + \frac{3}{8}(1 + E(1)) + \frac{3}{8}(1 + E(2)) + \frac{1}{8}(1 + E(3))$$
 $$E(4) = \frac{1}{16}1 + \frac{4}{16}(1 + E(1)) + \frac{6}{16}(1 + E(2)) + \frac{4}{16}(1 + E(3)) + \frac{1}{16}(1 + E(4))$$
 $$E(5) = \frac{1}{32}1 + \frac{5}{32}(1 + E(1)) + \frac{10}{32}(1 + E(2)) + \frac{10}{32}(1 + E(3)) + \frac{5}{32}(1 + E(4)) + \frac{1}{32}(1 + E(5))$$
@@ -134,8 +137,12 @@ Kaj opazimo?
 V števcih so številke Pascalovega trikotnika! To pomeni, da lahko formulo za splošen $n$ zapišemo z binomskimi simboli.
 Opomba: uporabimo oznako $E_n$ namesto $E(n)$ za boljšo preglednost.
 
+---
+
 layout: true
-<!-- nov slide -->
+background-image: url(cardsbkg1.jpg)
+background-size: cover
+
 ---
 
 <h1 style="background-color: white; color: black; padding: 10px; border-radius: 5px; display: inline-block;">
@@ -144,7 +151,7 @@ layout: true
 $$
 E_n = \frac{1}{2^n}(\binom{n}{0}1 + \binom{n}{1}(1 + E_1) + \binom{n}{2}(1 + E_2) + \ldots + \binom{n}{n-1}(1 + E_(n-1)) + \binom{n}{n}(1 + E_n)
 $$
-<!-- nov slide -->
+
 
 
     </textarea>
